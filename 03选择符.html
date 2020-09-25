@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*1.类型选择符*/
+			p{
+				color: red;
+			}
+			.b1{
+				color: blue;
+			}
+			#span1{
+				color: gold;
+				font-size: 40px;
+				color: red;
+				color: gold;
+				color: abc;
+			}
+			*{
+				font-family: "宋体";
+			}
+			/*.em1{
+				font-size: 30px;
+				color: red;
+				font-family: "微软雅黑";
+				background-color: black;
+			}
+			.em2{
+				font-size: 40px;
+				color: red;
+				font-family: "微软雅黑";
+				background-color: black;
+			}*/
+			.em1,.em2{
+				font-size: 30px;
+				color: red;
+				font-family: "微软雅黑";
+				background-color: black;
+			}
+			.em2{
+				font-size: 40px;
+			}
+			/*.box p{
+				color: red;
+			}*/
+			.box>p{
+				color: gold;
+			}
+			
+			/*初始状态*/
+			.a1:link{
+				color: black;
+			}
+			
+			/*被访问后的状态*/
+			.a1:visited{
+				color: red;
+			}
+			
+			/*鼠标移动到链接的状态*/
+			.a1:hover{
+				background-color: blue;
+			}
+			
+			/*鼠标按下的状态*/
+			.a1:active{
+				background-color: gold;
+			}
+			
+			
+			/*初始状态*/
+			.p2:link{
+				color: beige;
+			}
+			
+			/*被访问后的状态*/
+			.p2:visited{
+				color: blueviolet;
+			}
+			
+			/*鼠标移动到链接的状态*/
+			.p2:hover{
+				background-color: blue;
+			}
+			
+			/*鼠标按下的状态*/
+			.p2:active{
+				background-color: gold;
+			}
+			
+			.box3:hover .li2{
+				background-color: red;
+			}
+			
+			/*nth-child*/
+			/*2n:偶数*/
+			/*2n+1:奇数*/
+			/*n+3:大于等于3*/
+			/*-n+3:小于等于3*/
+			.list2 h4:nth-child(-n+3){
+				font-size: 30px;
+			}
+			.list2 h4:first-child{
+				background-color: greenyellow;
+			}
+			.list2 h4:last-child{
+				background-color: greenyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>1.类型选择符</h3>
+		<p>对接客户反馈数据的</p>
+		<p>对接客户反馈数据的</p>
+		<p>对接客户反馈数据的</p>
+		<p>对接客户反馈数据的</p>
+		<p>对接客户反馈数据的</p>
+		<h3>2.类选择符,一个标签可以有多个类名，类名可以重复出现</h3>
+		<b class="b1 b2 b3 bb">间谍活动经费</b>
+		<b class="b1 b2 b3 bb">间谍活动经费</b>
+		<i class="b1 b2 b3 bb">间谍活动经费</i>
+		<h3>3.id选择符,一个标签只能有一个id名，一个网页中不能出现相同的id名</h3>
+		<span id="span1">可见度分厘卡角度思考</span>
+		<b id="span2">可见度分厘卡角度思考</b>
+		<h3>4.通配符</h3>
+		<h3>5.群组选择符</h3>
+		<em class="em1">喝咖啡和健康的</em>
+		<em class="em2">喝咖啡和健康的</em>
+		<h3>6.后代选择符</h3>
+		<h3>7.子选择符</h3>
+		<h3>8.伪类选择符</h3>
+		<div class="box">
+			<p class="p1">时代精神的开始掉落看到</p>
+			<div class="box2">
+				<p class="p2">看到啥的就撒开了</p>
+				<a class="a1" href="#">百度</a>
+			</div>
+		</div>
+		<div class="box3">
+			<span>鼠标滑过</span>
+			<ul class="list">
+				<li>列表内容</li>
+				<li class="li2">列表内容</li>
+				<li>列表内容</li>
+				<li>列表内容</li>
+			</ul>
+		</div>
+		<div class="list2">
+			<h4>1列表内容</h4>
+			<h4>2列表内容</h4>
+			<h4>3列表内容</h4>
+			<h5>4东方红东方红空间</h5>
+			<h4>5列表内容</h4>
+			<h4>6列表内容</h4>
+			<h4>7列表内容</h4>
+			<h4>8列表内容</h4>
+		</div>
+	</body>
+</html>
